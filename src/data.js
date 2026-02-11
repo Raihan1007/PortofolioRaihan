@@ -79,6 +79,7 @@ import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.png";
 import Proyek4 from "/assets/proyek/proyek4.png";
 import Proyek5 from "/assets/proyek/proyek5.png";
+import { link } from "framer-motion/client";
 
 export const listProyek = [
   {
@@ -88,6 +89,7 @@ export const listProyek = [
     desk: "Website untuk menghitung suara pada sebuah pemilihan ketua dan wakil ketua himpunan mahasiswa",
     tools: ["HTML", "CSS", "Javascript",],
     dad: "200",
+    link:"https://e-voting-henna.vercel.app/"
   },
   {
     id: 2,
@@ -96,6 +98,7 @@ export const listProyek = [
     desk: "Sebuah website company profile untuk sebuah perusahaan fiktif untuk proyek saat studi independen",
     tools: ["HTML", "CSS"],
     dad: "300",
+    link:"https://kosfinder.vercel.app/"
   },
   {
     id: 3,
@@ -104,6 +107,7 @@ export const listProyek = [
     desk: "Website Manajemen Keuangan adalah web yang membantu mengelola pemasukan serta pengeluaran",
     tools: ["HTML", "CSS", "Javascript"],
     dad: "400",
+    link:"https://kasera-fe.vercel.app/"
   },
   {
     id: 4,
@@ -112,6 +116,7 @@ export const listProyek = [
     desk: "Website untuk memesan atau booking tempat olahraga secara online",
     tools: ["HTML", "CSS", "Javascript", "Code Igniter"],
     dad: "500",
+    link:"https://github.com/Raihan1007/SportSpace"
   },
   {
     id: 5,
@@ -120,5 +125,6 @@ export const listProyek = [
     desk: "Website pribadi untuk menampilkan profil serta proyek yang telah saya kerjakan",
     tools: ["JavaScript", "React JS", "Tailwind CSS"],
     dad: "600",
+    link:"https://portofolio-raihanrafi.vercel.app/"
   },
 ];
