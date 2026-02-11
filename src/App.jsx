@@ -10,12 +10,12 @@ function App() {
 
       {/* HERO */}
       <div className="hero grid md:grid-cols-2 grid-cols-1 items-center pt-10 gap-6">
-        <div>
+        <div className="animate__animated animate__fadeInUp animate__delay-3s">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
             <img
               src="/raihan.png"
               alt="Hero"
-              className="w-10 rounded-md"
+              className="w-10 rounded-md "
               loading="lazy"
             />
             <q>
@@ -60,12 +60,12 @@ function App() {
       </div>
 
       {/* TENTANG */}
-      <div className="tentang mt-32 py-10">
-        <div className="w-full lg:w-3/4 mx-auto p-7 bg-zinc-800 rounded-lg">
+      <div className="tentang mt-32 py-10" id="tentang">
+        <div className="w-full lg:w-3/4 mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up">
           <img
             src="/raihan.png"
             alt="Tentang"
-            className="w-12 rounded-md mb-10 sm:hidden"
+            className="w-12 rounded-md mb-10 sm:hidden "
           />
 
           <p className="text-base/loose mb-10">
@@ -79,7 +79,7 @@ function App() {
             <img
               src="/raihan.png"
               alt="Avatar"
-              className="w-12 rounded-md hidden sm:block"
+              className="w-12 rounded-md hidden sm:block "
             />
 
             <div className="flex items-center gap-6">
@@ -99,17 +99,17 @@ function App() {
 
         {/* TOOLS */}
         <div className="tools mt-32">
-          <h1 className="text-4xl font-bold mb-4">Tools yang dipakai</h1>
-          <p className="opacity-50 md:w-2/3">
+          <h1 className="text-4xl font-bold mb-4"data-aos="fade-up">Tools yang dipakai</h1>
+          <p className="opacity-50 md:w-2/3"data-aos="fade-up">
             Berikut beberapa tools yang biasa saya gunakan dalam pengembangan
             website
           </p>
 
-          <div className="tools-box mt-14 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
+          <div className="tools-box mt-14 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4  ">
             {listTools.map((tool) => (
               <div
                 key={tool.id}
-                className="flex items-center gap-3 p-3 border border-zinc-500 rounded-md hover:bg-zinc-800"
+                className="flex items-center gap-3 p-3 border border-zinc-500 rounded-md hover:bg-zinc-800"data-aos="fade-up" data-aos-delay={tool.dad}
               >
                 <img
                   src={tool.gambar}
@@ -127,15 +127,15 @@ function App() {
       </div>
 
       {/* PROYEK */}
-      <div id="proyek" className="proyek mt-32 py-10">
-        <h1 className="text-center text-4xl font-bold mb-2">Proyek</h1>
-        <p className="text-center opacity-50">
+      <div id="proyek" className="proyek mt-32 py-10" >
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up">Proyek</h1>
+        <p className="text-center opacity-50" data-aos="fade-up">
           Beberapa proyek yang telah saya kerjakan
         </p>
 
         <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
           {listProyek.map((proyek) => (
-            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md">
+            <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md" data-aos="fade-up" data-aos-delay={proyek.dad}>
               <img src={proyek.gambar} alt={proyek.nama} />
 
               <h1 className="text-xl font-bold my-4">{proyek.nama}</h1>
@@ -168,14 +168,14 @@ function App() {
       </div>
 
       {/* KONTAK */}
-      <div className="kontak mt-32 p-10">
-        <h1 className="text-4xl font-bold text-center mb-2">Kontak</h1>
-        <p className="text-center opacity-50 mb-6">Mari Hubungi Saya</p>
+      <div className="kontak mt-32 p-10" id="kontak">
+        <h1 className="text-4xl font-bold text-center mb-2" data-aos="fade-up">Kontak</h1>
+        <p className="text-center opacity-50 mb-6" data-aos="fade-up">Mari Hubungi Saya</p>
 
         <form
           action="https://formsubmit.co/raihanazz880@gmail.com"
           method="POST"
-          className="bg-zinc-800 p-10 mx-auto rounded-md max-w-lg"
+          className="bg-zinc-800 p-10 mx-auto rounded-md max-w-lg" data-aos="fade-up"
         >
           <div className="flex flex-col gap-6">
             <input

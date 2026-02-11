@@ -47,11 +47,11 @@ const IdCard = () => {
   return (
     <div
       ref={cardRef}
-      className="photo-card"
+      className="photo-card "
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <img src="/raihan.png" alt="Photo" />
+      <img className="animate__animated animate__fadeInUp animate__delay-3s" src="/raihan.png" alt="Photo" />
     </div>
   );
 };

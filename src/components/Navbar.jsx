@@ -32,18 +32,18 @@ const Navbar = () => {
     Portfolio
   </h1>
 </div>
-            <ul className={`menu flex items-center sm:gap-10 gap-4  md:static fixed left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl rounded-bl-2xl md:bg-transparent transition-all md:transition-none z-50 ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}> 
+            <ul className={`menu flex items-center sm:gap-10 gap-4  md:static fixed left-1/2 -translate-x-1/2 md:-translate-x-0 md:opacity-100 bg-white/30 backdrop-blur-md p-4 rounded-br-2xl sm-2 rounded-bl-2xl md:bg-transparent transition-all md:transition-none z-50 ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}> 
                 <li>
-                    <a href="#" className="sm:text-lg text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4 ">Beranda</a>
+                    <a href="#beranda" className="sm:text-lg text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4 ">Beranda</a>
                 </li> 
                 <li>
-                    <a href="#" className="sm:text-lg text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4">Tentang</a>
+                    <a href="#tentang" className="sm:text-lg text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4">Tentang</a>
                 </li> 
                 <li>
-                    <a href="#" className="sm:text-lg  text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4">Project</a>
+                    <a href="#proyek" className="sm:text-lg  text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4">Project</a>
                 </li> 
                 <li>
-                    <a href="#" className="sm:text-lg text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4">Kontak</a>
+                    <a href="#kontak" className="sm:text-lg text-base font-medium hover:bg-gradient-to-r hover:from-blue-800 hover:to-purple-700 rounded-3xl p-4">Kontak</a>
                 </li> 
             </ul>
         </div>
